@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Petualangan Pythagoras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/jelajah.css">
+<link rel="stylesheet" href="css/online.css">
+</head>
+<body data-screen="splash">
+<a class="skip" href="#app">Lewati ke konten</a>
+<header id="hud" hidden>
+  <button class="hud-btn" id="hudBack" aria-label="Kembali"><img class="px" src="assets/img/ic_left.png" alt=""></button>
+  <button class="hud-btn" id="hudHome" aria-label="Menu utama"><img class="px" src="assets/img/ic_home.png" alt=""></button>
+  <span class="hud-title" id="hudTitle"></span>
+  <span class="hud-player" id="hudPlayer"></span>
+  <span class="hud-lv"><b id="hudLv">Lv 1</b><span class="hud-bar"><i id="hudXp"></i></span></span>
+  <span class="hud-stars"><img class="px" src="assets/img/star_gold.png" alt="Bintang"><b id="hudStars">0</b></span>
+</header>
+<main id="app" tabindex="-1"><p class="loading">Memuat petualangan…</p></main>
+<button id="audioBtn" aria-label="Pengaturan suara" title="Pengaturan suara">
+  <img class="px on" src="assets/img/ic_vol_on.png" alt=""><img class="px off" src="assets/img/ic_vol_off.png" alt="">
+  <span class="eq"><i></i><i></i><i></i><i></i></span></button>
+<div id="audioHint" hidden>Ketuk layar untuk menyalakan musik</div>
+<aside id="audioPanel" class="panel" hidden aria-label="Pengaturan suara"></aside>
+<div id="modal" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+<div id="fx" aria-hidden="true"></div>
+<noscript><p style="padding:20px;background:#fff">Game ini membutuhkan JavaScript. Aktifkan JavaScript pada browser Anda.</p></noscript>
+<script src="js/data.js"></script>
+<script src="js/audio-config.js"></script>
+<script src="js/store.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/fit.js"></script>
+<script src="js/world3d.js"></script>
+<script src="js/app.js"></script>
+<script src="js/materi.js"></script>
+<script src="js/games.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/report.js"></script>
+<script src="js/jelajah.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/online.js"></script>
+</body>
+</html>

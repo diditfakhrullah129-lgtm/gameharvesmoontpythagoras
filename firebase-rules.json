@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "rooms": {
+      "$room": {
+        ".validate": "$room.matches(/^[A-Z0-9]{4,8}$/)",
+        ".read": true,
+        "players": {
+          "$pid": {
+            ".write": true,
+            ".validate": "$pid.matches(/^[a-z0-9]{6,24}$/) && newData.hasChildren(['name','score','ts']) && newData.child('name').isString() && newData.child('name').val().length >= 1 && newData.child('name').val().length <= 20 && newData.child('score').isNumber() && newData.child('score').val() >= 0 && newData.child('score').val() <= 100 && newData.child('ts').isNumber()",
+            "name":     { ".validate": true },
+            "score":    { ".validate": true },
+            "quiz":     { ".validate": "newData.isNumber()" },
+            "correct":  { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100" },
+            "missions": { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 6" },
+            "stars":    { ".validate": "newData.isNumber() && newData.val() >= 0" },
+            "xp":       { ".validate": "newData.isNumber() && newData.val() >= 0" },
+            "ts":       { ".validate": true },
+            "$other":   { ".validate": false }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Saya punya game edukasi HTML/CSS/JS murni bernama "Petualangan Pythagoras" (pixel art, satu layar tanpa scroll).
+Terlampir file game_satu_file.html (seluruh CSS dan JS sudah digabung). Tolong jalankan dan kembangkan tanpa mengubah desain dan fitur yang ada.
+Catatan: gambar ada di assets/img/..., suara di assets/audio/... (belum diunggah; mesin audio punya suara cadangan sintetis, jadi tetap berbunyi).
+Tugas saya: <tulis di sini>

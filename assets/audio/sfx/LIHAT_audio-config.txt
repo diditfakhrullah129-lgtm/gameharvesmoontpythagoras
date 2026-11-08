@@ -1,0 +1,2 @@
+Letakkan file audio kategori "sfx" di folder ini (mp3/wav/ogg/m4a),
+lalu daftarkan di js/audio-config.js: isi "file" dan ubah available: false menjadi available: true.

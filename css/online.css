@@ -1,0 +1,47 @@
+/* ===== Mode online: nama, kode ruangan, papan peringkat ===== */
+.mn-btns { display: flex; gap: 8px; flex: none; }
+.mn-btns .btn { white-space: nowrap; }
+@media (max-width: 520px) { .mn-btns { width: 100%; min-width: 0; box-sizing: border-box; } .mn-btns .btn { min-width: 0; padding-left: 8px; padding-right: 8px; font-size: .82rem; } .mn-btns .mn-cta { flex: 1 1 0; width: auto; } .mn-btns .mn-onl { flex: 0 0 auto; } }
+
+.onl { display: flex; align-items: stretch; justify-content: center; padding: 8px max(12px, env(safe-area-inset-left, 0px)); min-height: 0; height: 100%; }
+.onl-card { width: min(640px, 100%); max-height: 100%; display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; border-radius: 18px; background: rgba(14, 26, 54, .92); border: 2px solid #3b5aa8; box-shadow: 0 6px 0 #0a1330, 0 10px 24px rgba(0, 0, 0, .35); color: #eef3ff; min-height: 0; }
+.onl-card h2 { margin: 0; font-size: clamp(1.05rem, 3.2dvh, 1.5rem); }
+.onl-sub { margin: 0; font-size: .86rem; opacity: .85; }
+.onl-setup { align-self: center; align-items: stretch; text-align: center; }
+.onl-owl { width: 60px; margin: 0 auto -4px; }
+.onl-owl img { width: 100%; height: auto; }
+.onl-f { display: flex; flex-direction: column; gap: 4px; text-align: left; font-weight: 800; font-size: .82rem; }
+.onl-f input { width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 12px; border: 2px solid #3b5aa8; background: #0a1330; color: #fff; font: inherit; font-size: 1rem; }
+.onl-f input:focus { outline: none; border-color: #ffd54a; }
+.onl-code { display: flex; gap: 8px; }
+.onl-code input { text-transform: uppercase; letter-spacing: .12em; }
+.onl-err { min-height: 1.1em; margin: 0; color: #ff8a8a; font-size: .84rem; font-weight: 700; }
+.onl-be { align-self: center; font-size: .74rem; opacity: .9; }
+.onl-be.ok { background: #1f7a45; color: #eaffef; }
+
+.onl-board { height: 100%; }
+.onl-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; flex: none; }
+.onl-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.onl-btns { display: flex; gap: 6px; flex: none; }
+.onl-me { flex: none; font-size: .86rem; padding: 6px 10px; border-radius: 10px; background: rgba(255, 255, 255, .08); }
+.onl-me .bad { color: #ffb4b4; }
+.onl-list { list-style: none; margin: 0; padding: 0; flex: 1 1 0; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 6px; }
+.onl-row { flex: none; height: 44px; display: grid; grid-template-columns: 38px 1fr auto auto auto; align-items: center; gap: 8px; padding: 0 10px; border-radius: 12px; background: rgba(255, 255, 255, .07); border: 2px solid transparent; }
+.onl-row.me { background: rgba(255, 213, 74, .16); border-color: #ffd54a; }
+.onl-row .rk { font-weight: 800; text-align: center; font-size: 1.05rem; }
+.onl-row .nm { font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.onl-row .nm i { font-style: normal; font-size: .72rem; opacity: .75; }
+.onl-row b { display: block; font-size: .98rem; line-height: 1; text-align: center; }
+.onl-row small { display: block; font-size: .6rem; opacity: .7; text-align: center; }
+.onl-row .sc, .onl-row .ms, .onl-row .xp { min-width: 40px; }
+.onl-foot { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.onl-pg { display: flex; align-items: center; gap: 8px; font-weight: 800; }
+.qz-onl { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 6px 0; }
+.qz-onl p { margin: 0; }
+@media (max-height: 520px) {
+  .onl { padding-top: 4px; padding-bottom: 4px; }
+  .onl-card { padding: 8px 10px; gap: 5px; }
+  .onl-row { height: 36px; }
+  .onl-owl, .onl-sub { display: none; }
+}
+@media (max-width: 400px) { .onl-row { grid-template-columns: 30px 1fr auto auto; } .onl-row .xp { display: none; } }
