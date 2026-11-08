@@ -1,0 +1,28 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "pythagoras": {
+      "rooms": {
+        "$room": {
+          ".read": "$room.matches(/^[A-Z0-9]{3,10}$/)",
+          "players": {
+            "$pid": {
+              ".write": "$room.matches(/^[A-Z0-9]{3,10}$/) && $pid.matches(/^p[a-z0-9]{6,24}$/)",
+              ".validate": "newData.hasChildren(['name', 'updated'])",
+              "name":    { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 40" },
+              "kelas":   { ".validate": "newData.isString() && newData.val().length <= 20" },
+              "avatar":  { ".validate": "newData.isString() && newData.val().length <= 12" },
+              "quiz":    { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100" },
+              "final":   { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100" },
+              "stars":   { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100" },
+              "pos":     { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 6" },
+              "updated": { ".validate": "newData.isNumber()" },
+              "$other":  { ".validate": false }
+            }
+          }
+        }
+      }
+    }
+  }
+}

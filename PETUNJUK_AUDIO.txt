@@ -1,0 +1,8 @@
+STRUKTUR AUDIO
+assets/audio/sfx/01_klik_tombol.wav ... 08_kemenangan_akhir.wav
+assets/audio/bgm/09_musik_latar_eksplorasi_loop.wav  (dipakai di halaman Eksplorasi)
+assets/audio/bgm/bgm_*.mp3                            (musik latar lama, tidak diubah)
+
+Semua pengaturan ada di js/audio-config.js (tracks, events, sceneMusic).
+Mesin audio: js/audio.js. Ganti musik halaman peta dengan file 09? ubah
+sceneMusic.peta menjadi 'bgm_explore'.
