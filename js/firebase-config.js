@@ -8,5 +8,5 @@
    di perangkat itu saja) supaya tetap bisa dicoba tanpa internet.
    ========================================================= */
 window.PP_FIREBASE = window.PP_FIREBASE || {
-  databaseURL: ''
+  databaseURL: 'https://mispythagoraskelas8-default-rtdb.asia-southeast1.firebasedatabase.app/'
 };
